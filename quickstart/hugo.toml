@@ -1,0 +1,4 @@
+baseURL = 'https://lidija-jovanovska.github.io'
+languageCode = 'en-us'
+title = 'My Personal Blog'
+theme = 'ananke'
