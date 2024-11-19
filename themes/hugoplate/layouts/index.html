@@ -2,25 +2,22 @@
   <!-- Banner -->
   {{ with .Params.banner }}
     <section class="relative min-h-screen flex items-center justify-center">
-      <!-- Background Image -->
-      <!-- <div class="absolute inset-0 w-full h-full">
-        {{ partial "image" (dict 
-          "Src" .image 
-          "Alt" "Banner background" 
-          "Loading" "eager" 
-          "Class" "w-full h-full object-cover" 
-        )}} -->
-        <!-- Optional overlay to improve text readability -->
-        <!-- <div class="absolute inset-0 bg-black/30"></div> -->
+      <!-- Background image -->
+      <div class="absolute inset-0" 
+      style="background-image: url('{{ with resources.Get .image }}{{ .RelPermalink }}{{ end }}');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(50%)">
       </div>
-
+      
       <!-- Content -->
       <div class="container relative z-10">
         <div class="flex flex-col items-center text-center max-w-3xl mx-auto">
-          <h1 class="text-4xl md:text-6xl font-bold text-dark mb-6">
+          <h1 class="text-darkmode-light text-4xl md:text-6xl font-bold mb-6">
             {{ .title | markdownify }}
           </h1>
-          <p class="text-lg md:text-xl text-white/90 mb-8">
+          <p class="text-lg md:text-xl text-darkmode-light mb-8">
             {{ .content | markdownify }}
           </p>
           {{ with .button }}

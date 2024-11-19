@@ -5,29 +5,24 @@ description: "Explore Lidija Jovanovska's work in machine learning, NLP, and AI.
 draft: false
 ---
 
-<div class="flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="flex flex-col items-center md:flex-row md:items-start justify-between gap-12">
   {{< image 
     src="/images/profile.jpeg" 
     caption="" 
     alt="alter-text" 
-    position="left" 
+    position="center" 
     command="fill" 
     option="q100" 
     class="img-fluid w-80 h-80 rounded-lg object-cover" 
-    title="image title"  
+    title="Lidija Jovanovska"  
     webp="false" 
   >}}
-    <div>
+  <div class="md:min-h-[20rem] text-center md:text-center">
     <h1 class="text-[#cf6a87] text-5xl font-bold mb-3">Lidija Jovanovska</h1>
     <h2 class="text-light dark:text-darkmode-light text-3xl font-semibold mb-4">Data Scientist | NLP & Machine Learning Specialist</h2>
   </div>
 </div>
 
-<!-- <h1 style="color: #cf6a87"> Lidija Jovanovska</h1>
-
-## Data Scientist | NLP & Machine Learning Specialist
-
-{{< image src="/images/profile.jpeg" caption="" alt="alter-text" height="" width="" position="right" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}} -->
 
 <div style="text-align: justify;">
 
@@ -37,36 +32,44 @@ I’m a data scientist specialising in natural language processing — basically
 
 Currently, I’m part of the innovative team at Sportradar, where I focus on building NLP-driven solutions for entity mapping and semantic search. One of my proudest achievements has been deploying a semantic search engine that significantly improved mapping accuracy. I also get to have a little fun building GenAI products for sports commentary. Prior to this, I honed my skills at a real estate startup, developing machine learning models that boosted price estimation accuracy and strengthened client relationships.
 
-My academic journey at the Jožef Stefan Institute gave me a strong foundation in AI and semantic technologies, where I co-authored multiple research papers and contributed to tools for AI algorithm annotation. It’s also where I learned that data really can tell fascinating stories, if you know how to listen.
-
 I thrive on the intersection of innovation and impact. Whether it’s deploying machine learning models into production or fine-tuning NER models for semantic annotation, I believe in the power of data to transform industries. I’m always eager to learn, explore new techniques, and bring creative solutions to the table. And if you ever want to chat AI, NLP, or how to make machines understand us a little better, feel free to reach out!
 
 ### Skills
 
 {{< accordion "Programming Languages & Frameworks" >}}
 
-- **Python**: Extensive experience with libraries like Pandas, Numpy, Scikit-learn, Pytorch, Plotly, Huggingface.
-- **SQL**: Proficient in writing complex queries and working with relational databases.
-- **FastAPI, Django**: Web development experience.
-- **Docker, Kubernetes**: Containerization and orchestration of ML models in production environments.
+##### Python
+- Extensive experience with libraries like Pandas, Numpy, Scikit-learn, Pytorch, Plotly, Huggingface libraries
+##### SQL
+- Proficient in writing complex queries and working with relational databases
+##### FastAPI, Django
+- Web development experience building robust APIs
+##### Docker, Kubernetes
+- Containerization and orchestration of ML models in production environments
 
 {{< /accordion >}}
 
 {{< accordion "Machine Learning & Data Science" >}}
 
-- **Natural Language Processing (NLP)**: Named Entity Recognition (NER), Semantic Search, Text Classification.
-- **Machine Learning**: Developing and deploying ML models for tasks such as entity mapping and price estimation.
-- **Data Visualization**: Plotly, Matplotlib, creating insightful visualizations to communicate findings.
+##### Natural Language Processing (NLP)
+- Named Entity Recognition (NER), Semantic Search, Text Classification, LLMs
+##### Machine Learning 
+- Developing and deploying ML models for tasks such as entity mapping and price estimation
+##### Data Visualization 
+- Using Plotly, Matplotlib for creating insightful visualizations to communicate findings
 
 {{< /accordion >}}
 
 {{< accordion "Cloud & DevOps" >}}
 
-- **AWS**: Experience with services such as Redshift, S3, Sagemaker for model training and data handling.
-- **MLFlow, Kubeflow**: Managing machine learning lifecycles, model versioning, and experiment tracking.
-- **CI/CD Pipelines**: Implementing continuous integration and continuous deployment practices.
-- **Git**: Version control and collaborative development.
-- **Kafka**: Real-time data processing.
+##### AWS 
+- Experience with services such as Redshift, S3, Sagemaker for model training and data handling
+##### MLFlow, Kubeflow 
+- Managing machine learning lifecycles, model versioning, and experiment tracking
+##### Git + CI/CD Pipelines 
+Version control, continuous integration and continuous deployment practices
+##### Kafka 
+Real-time data processing
 
 {{< /accordion >}}
 
