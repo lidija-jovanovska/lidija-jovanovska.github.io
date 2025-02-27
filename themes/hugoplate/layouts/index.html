@@ -3,14 +3,14 @@
   {{ with .Params.banner }}
     <section class="relative min-h-screen flex items-center justify-center">
       <!-- Background image -->
-      <div class="absolute inset-0" 
-      style="background-image: url('{{ with resources.Get .image }}{{ .RelPermalink }}{{ end }}');
+      <div class="absolute inset-0"
+      style="background-image: url('/images/banner-girl-x4.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       filter: brightness(50%)">
       </div>
-      
+
       <!-- Content -->
       <div class="container relative z-10">
         <div class="flex flex-col items-center text-center max-w-3xl mx-auto">
