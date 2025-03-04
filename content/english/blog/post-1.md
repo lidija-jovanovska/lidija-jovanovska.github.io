@@ -1,20 +1,19 @@
 ---
-title: "Mastering Value Investing with Python: Implementing Benjamin Graham's Strategy"
+title: "Value Investing with Python: Benjamin Graham’s Strategy in Action"
 meta_title: "Value Investing with Python: Implementing Benjamin Graham's Defensive Strategy"
 description: "Discover how to implement Benjamin Graham's defensive investment strategy using Python and financial data. Learn the key criteria for value investing and how to screen stocks programmatically."
 date: 2025-02-27
 image: "/images/blog_post_banner.jpg"
-categories: [ "Investing", "Python", "Financial Analysis", "Value Investing" ]
+categories: [ "Investing", "Python", "Financial Analysis"]  
 author: "Lidija Jovanovska"
-tags: [ "python", "financial-modeling-prep", "value-investing", "stock-screening", "benjamin-graham" ]
+tags: [ "python", "value-investing"]
 draft: False
 keywords: [ "value investing", "Benjamin Graham", "Python investing", "stock screening", "financial analysis", "defensive investment strategy", "investment criteria", "financial modeling prep", "S&P 500", "investment strategy" ]
 ---
 
-
-### Introduction
-
 Have you ever wondered why some investors consistently outperform the market while others struggle? The answer might lie in following time-tested principles rather than chasing the latest investment trends. What if you could use the same investment strategy that influenced Warren Buffett and countless other successful investors? In this post, I'll show you exactly how to implement Benjamin Graham's defensive investment approach using Python and financial data.
+
+## Introduction
 
 Two years ago, I knew almost nothing about investing. Coming from Macedonia, a post-socialist state perpetually transitioning to capitalism, I had the notion that investing was reserved for financial professionals or the exceptionally wealthy. My journey from complete novice to implementing Graham's strategy programmatically is what I want to share with you today.
 
@@ -29,8 +28,7 @@ this book once and move on—it functions more like a guide that reveals new ins
 It has helped me understand the foundations of investing and shown me which paths I might follow in my own financial journey.
 
 
-
-### Understanding Benjamin Graham's Philosophy
+## Understanding Benjamin Graham's philosophy
 
 Benjamin Graham, often referred to as the "Father of Value Investing," was a renowned economist, investor, and author
 whose principles continue to shape modern finance. His investing approach emphasized the importance of intrinsic value,
@@ -39,7 +37,7 @@ potential returns. Graham's disciplined, research-driven methodology focused on 
 stability, and margin of safety. 
 What's remarkable is how relevant his principles remain today, even in our high-speed digital markets dominated by algorithms and day traders.
 
-### Defensive vs. Enterprising Investing
+### Defensive vs. enterprising investing
 
 Graham outlined two distinct investment strategies in The Intelligent Investor: one for the defensive investor
 and another for the enterprising (or aggressive) investor. These strategies reflect different levels of risk tolerance,
@@ -53,79 +51,67 @@ time commitment, and skill. Here's his take on the differences between these two
 > from concern. The maximum return would be realized by the alert and enterprising investor who exercises maximum
 > intelligence and skill.
 
-#### Defensive investor strategy
+### Defensive investor strategy
 
 The defensive investor seeks a passive, low-risk approach focused on capital preservation and steady returns. This
 strategy prioritizes simplicity, diversification, and a long-term perspective. Key principles include:
 
-- Stock Selection: Invest in large, financially stable companies with a history of consistent dividends and earnings.
+- **Stock Selection**: Invest in large, financially stable companies with a history of consistent dividends and earnings.
   Avoid speculative or high-risk stocks.
-- Diversification: Hold a well-diversified portfolio of 10–30 stocks to reduce risk.
-- Asset Allocation: Maintain a balanced allocation between stocks and bonds, typically 50/50, but adjust slightly based
+- **Diversification**: Hold a well-diversified portfolio of 10–30 stocks to reduce risk.
+- **Asset Allocation**: Maintain a balanced allocation between stocks and bonds, typically 50/50, but adjust slightly based
   on market conditions or individual circumstances.
-- Minimal Activity: Avoid frequent trading, market timing, or speculative decisions. Instead, focus on a buy-and-hold
+- **Minimal Activity**: Avoid frequent trading, market timing, or speculative decisions. Instead, focus on a buy-and-hold
   approach with periodic rebalancing.
 
-#### Enterprising Investor Strategy
+### Enterprising investor strategy
 
 The enterprising investor takes a more active, hands-on approach, aiming to outperform the market by identifying
 undervalued opportunities. This strategy requires diligence, financial knowledge, and a greater tolerance for risk. Key
 principles include:
 
-- Stock Selection: Focus on undervalued, overlooked, or mispriced stocks, often identified through detailed financial
+- **Stock Selection**: Focus on undervalued, overlooked, or mispriced stocks, often identified through detailed financial
 analysis.
-- Special Situations: Exploit opportunities in special scenarios, such as bankruptcies, mergers, or spinoffs, where
+- **Special Situations**: Exploit opportunities in special scenarios, such as bankruptcies, mergers, or spinoffs, where
 inefficiencies can lead to significant gains.
-- Market Timing: While not speculating, the enterprising investor is more willing to adjust portfolio allocation based on
+- **Market Timing**: While not speculating, the enterprising investor is more willing to adjust portfolio allocation based on
 market conditions.
-- Concentrated Investments: Unlike the defensive investor, the enterprising investor may hold fewer stocks to concentrate
+- **Concentrated Investments**: Unlike the defensive investor, the enterprising investor may hold fewer stocks to concentrate
 on high-potential opportunities.
 
 
-### Implementing the Strategy with Python
+## Building the tool that implements the Defensive investor strategy
 
 The inspiration for this blog post was the fact that I wanted to screen stocks based on Graham's simple heuristics for identifying
-valuable companies potentially trading below their fair value. I knew I could use some of the websites like yahoo finance
-for some of the criteria, but not for all of them - implemented exactly as Graham defined them in the Intelligent Investor.
-
-After some research and deliberation, I decided to implement them myself - using my expertise in programming and data,
-with the help of financial data obtained via the financialmodelingprep API and pandas and plotly for stats and visualisation. 
-
-Not only will this help us find potential investment opportunities, but building this tool ourselves gives us complete 
+valuable companies potentially trading below their fair value. I knew I could use some of the websites like [Yahoo Finance](https://github.com/ranaroussi/yfinance) for some of the criteria, but not for all of them - implemented exactly as Graham defined them in the Intelligent Investor. After some research and deliberation, I decided to implement them myself - using my expertise in programming and data,
+with the help of financial data obtained via the [Financial Modeling Prep API](https://site.financialmodelingprep.com/developer/docs) and the Python libraries [Pandas](https://pandas.pydata.org) and [Plotly](https://plotly.com) for stats and visualisation. Not only will this help us find potential investment opportunities, but building this tool ourselves gives us complete 
 control over the criteria and thresholds - something no pre-built screener can offer.
 
-For this example, we will use data from the S&P 500 list of the most valuable companies in the US market. However, the code
-would work also for any other companies which have the data needed to compute the indicators via the financialmodelingprep API.
 
-The code used for this walkthrough is available on [Github](https://github.com/lidija-jovanovska/investing).
+[Financial modeling Prep](https://site.financialmodelingprep.com) offers [different access plans](https://site.financialmodelingprep.com/developer/docs/pricing). You can get an access token and use the **Basic** plan for free. However, you won't be able to compute criteria 3, 4 and 5, as they require historical data for more than the past five years. This analysis was done using the Starter plan.
+The code used for this walkthrough is available on my [Github](https://github.com/lidija-jovanovska/investing).
 
-Financial modeling prep offers different access plans which you can review on their [website](https://site.financialmodelingprep.com/developer/docs/pricing).
-In short, you can get an access token and use the **Basic** plan for free. However, you won't be able to compute criteria
-3, 4 and 5, as they require historical data for more than the past five years. This analysis was done using the Starter plan.
 
-### The 7 Key Criteria Explained: A case study on the S&P 500
+## The 7 key criteria explained: A case study on the S&P 500
 
-Let's now go through each of the criteria. We will discuss the logic behind each of them, the implementation and the
-results when evaluating it on the S&P500 list.
+We will use data from the [S&P 500](https://en.wikipedia.org/wiki/S%26P_500) list of the most valuable companies in the US market. However, the code
+would work also for any other companies which have the data needed to compute the indicators. Let's now go through the criteria, where we will discuss the logic, implementation and results for each of them.
 
-#### Adequate size of the enterprise
+
+### Adequate size of the enterprise
 
 
 The idea here is to exclude small companies which are potentially less likely to withstand market fluctuations. Although there may
 be great opportunity in such enterprises, the skill and time investment required is contrary to the defensive investor approach.
-Jason Zweig notes interestingly in his commentary in the book that you can nowadays diversify your portfolio, and thereby decrease the risk of owning 
-small companies, by buying a well-diversified ETF.
+Jason Zweig notes interestingly in his commentary in the book that you can nowadays diversify your portfolio, and thereby decrease the risk of owning small companies, by buying a well-diversified ETF (a popular approach nowadays).
 
-The threshold was set to $2 billion in 2003. Adjusting for inflation by using an [inflation calculator](https://www.nerdwallet.com/calculator/inflation-calculator),
-this would amount to $3.42 billion in 2024. We can see that all companies satisfy the filter since these are in fact the S&P 500 companies - the biggest companies in the US.
-This means that investing in any of these companies would satisfy the first criteria. 
-However, if we want to use the same criteria for other indexes (say, for emerging markets), this criteria would be useful to determine which companies are of adequate size. 
+The threshold was set to $2 billion in 2003. Adjusting for inflation by using an [inflation calculator](https://www.nerdwallet.com/calculator/inflation-calculator), this would amount to $3.42 billion in 2024. We can see that all companies satisfy the filter since these are in fact the S&P 500 companies - the biggest companies in the US. This means that investing in any of these companies would satisfy the first criteria. However, if we want to use the same criteria for other indexes (say, for emerging markets), this criteria would be useful to determine which companies are of adequate size. 
 
 
 {{<plotly json="/plotly/10_largest_companies.json" height="400px">}}
 
 
-#### Strong financial condition
+### Strong financial condition
 
 
 What is a good heuristic that would help us discern between companies in a strong financial condition and ones that are not?
@@ -133,15 +119,14 @@ Graham uses the [current ratio](https://www.investopedia.com/terms/c/currentrati
 It measures the company's liquidity, i.e., whether it can pay its short-term debts using its current assets. He recommends a
 current ratio of 2-to-1, so that a company has twice more assets than liabilities, which should sustain them through hard times.
 This is a more restrictive criterion and according to some sources it can be better to compare the current ratio of the company
-to the industry average. Personally, I find this criterion fascinating because it focuses on what a company actually owns versus what it owes - 
-a fundamental principle often overlooked in today's growth-obsessed market. When I first applied this filter, I was 
+to the industry average. Personally, I find this criterion fascinating because it focuses on what a company actually owns versus what it owes - a fundamental principle often overlooked in today's growth-obsessed market. When I first applied this filter, I was 
 surprised by how many seemingly "stable" S&P 500 companies didn't make the cut. Applying this filter leaves us with the following 115 companies:
 
 
 {{<plotly json="/plotly/current_ratio.json" height="400px">}}
 
 
-#### Earnings stability
+### Earnings stability
 
 
 Some earnings for the common stock in each of the past ten years. 
@@ -154,7 +139,7 @@ Some general advice though, If you like the business, go deeper into the data - 
 {{<plotly json="/plotly/positive_eps.json" height="400px">}}
 
 
-#### Dividend record
+### Dividend record
 
 
 Uninterrupted dividend payments for at least the past 20 years. 
@@ -164,7 +149,7 @@ vast enough to cover several economic cycles. Think about it - a company that's 
 through recessions, market crashes, and technological disruptions demonstrates remarkable business resilience.
 Applying this criterion leave us with 251 companies - roughly half of the S&P 500 list.
 
-#### Earnings growth
+### Earnings growth
 
 
 A minimum increase of at least one third in per-share earnings in the past ten years using three-year averages at the 
@@ -177,7 +162,7 @@ the chart filters out the companies EOG Resources and APA Corporation which have
 
 {{<plotly json="/plotly/eps_growth.json" height="400px">}}
 
-#### Moderate price/earnings ratio
+### Moderate price/earnings ratio
 
 
 Current price should not be more than 15 times average earnings of the past three years.
@@ -190,7 +175,7 @@ other more conservative sectors, like financial for example. Currently, only 110
 {{<plotly json="/plotly/pe_ratio.json" height="400px">}}
 
 
-#### Moderate price to book ratio
+### Moderate price to book ratio
 
 
 Current price should not be more than 1.5 times the book value last reported.
@@ -205,12 +190,7 @@ criterion.
 
 
 
-{{< notice "info" >}}
-I want to be clear that I'm sharing my personal journey and implementation of Graham's strategy, not offering formal investment advice. I'm not a licensed financial advisor. Any investment decisions you make should be based on your own research and possibly consultation with qualified professionals. Remember that all investments carry risk, and what worked in the past isn't guaranteed to work in the future. You're responsible for your own financial choices, and neither I nor this blog can be held liable for any investment outcomes.
-{{< /notice >}}
-
-
-### Conclusion
+## Conclusion
 
 Finally, we combine all criteria in a single dataframe where we can filter based on any combination of the criteria.
 We can see that only three companies satisfy all the criteria laid out by Graham. While this may seem limiting, 
@@ -233,8 +213,8 @@ and modify some of the criteria to your own needs. The beauty of Graham's approa
 it's in how it combines disciplined analysis with psychological protection against market volatility. 
 By implementing these criteria programmatically, you gain both efficiency and emotional distance from the daily market noise.
 
-I've shared the complete code on [GitHub](https://github.com/lidija-jovanovska/investing), so you can immediately start screening
- for your own Graham-approved stocks. If you adjust the criteria as I've suggested, I'd love to hear about your results in the comments.
+I've shared the complete code on my [GitHub](https://github.com/lidija-jovanovska/investing), so you can immediately start screening
+for your own Graham-approved stocks. If you adjust the criteria as I've suggested, I'd love to hear about your results.
 
 Remember, as Graham himself would say:
 > Those who emphasize protection are always especially concerned with the price of the issue at the time of study.
@@ -244,3 +224,9 @@ Remember, as Graham himself would say:
  
  
 What criteria will you prioritize in your own investment strategy?
+
+<hr>
+
+{{< notice "info" >}}
+I want to be clear that I'm sharing my personal journey and implementation of Graham's strategy, not offering formal investment advice. I'm not a licensed financial advisor. Any investment decisions you make should be based on your own research and possibly consultation with qualified professionals. Remember that all investments carry risk, and what worked in the past isn't guaranteed to work in the future. You're responsible for your own financial choices, and neither I nor this blog can be held liable for any investment outcomes.
+{{< /notice >}}

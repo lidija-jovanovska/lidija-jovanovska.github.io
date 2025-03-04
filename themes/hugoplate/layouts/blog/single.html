@@ -17,8 +17,7 @@
           </h1>
           <ul class="mb-4">
             <li class="mr-4 inline-block">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
+              <a href="/about/">
                 <i class="fa-regular fa-circle-user mr-2"></i
                 >{{ .Params.author }}
               </a>
@@ -44,7 +43,7 @@
             </li>
           </ul>
           <div class="content mb-10">
-            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" true "TableOfContents" .TableOfContents ) }}
             {{ .Content }}
           </div>
           <div class="row items-start justify-between">

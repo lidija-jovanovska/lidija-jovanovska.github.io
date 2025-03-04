@@ -28,11 +28,11 @@ draft: false
 
 ### About Me
 
-I’m a data scientist specialising in natural language processing — basically, I love teaching computers to understand humans (and sometimes, I swear, they almost get it). Since publishing my first research paper in 2019, I’ve been driven by a curiosity to solve complex problems and push the boundaries of data science and AI.
+I’m a data scientist specialising in building and deploying ML solutions. Since publishing my first research paper in 2019, I’ve been driven by a curiosity to solve complex problems and push the boundaries of data science and AI.
 
-Currently, I’m part of the innovative team at Sportradar, where I focus on building NLP-driven solutions for entity mapping and semantic search. One of my proudest achievements has been deploying a semantic search engine that significantly improved mapping accuracy. I also get to have a little fun building GenAI products for sports commentary. Prior to this, I honed my skills at a real estate startup, developing machine learning models that boosted price estimation accuracy and strengthened client relationships.
+Currently, I’m part of the innovative team at Sportradar, where I focus on building NLP-driven solutions for entity mapping and semantic search. One of my proudest achievements has been deploying a semantic search engine that significantly improved mapping accuracy for various company services. I also get to have a little fun building GenAI products for sports commentary. Prior to this, I honed my skills at a real estate startup, developing machine learning models that boosted price estimation accuracy and strengthened client relationships.
 
-I thrive on the intersection of innovation and impact. Whether it’s deploying machine learning models into production or fine-tuning NER models for semantic annotation, I believe in the power of data to transform industries. I’m always eager to learn, explore new techniques, and bring creative solutions to the table. And if you ever want to chat AI, NLP, or how to make machines understand us a little better, feel free to reach out!
+I thrive on the intersection of innovation and impact. Whether it’s deploying machine learning models into production or fine-tuning language models for semantic annotation, I believe in the power of data to transform industries. I’m always eager to learn, explore new techniques, and bring creative solutions to the table. And if you ever want to chat AI, NLP, or how to make machines understand us a little better, feel free to reach out!
 
 ### Skills
 
@@ -92,7 +92,7 @@ Real-time data processing
 
 #### Achievements
 
-- Successfully deployed a semantic search engine, improving mapping accuracy by n%
+- Successfully deployed a semantic search engine boasting 98% mapping accuracy
 - Developed a match commentary solution that will be integrated across different services
 
 {{< /accordion >}}
@@ -175,6 +175,9 @@ Real-time data processing
 {{< /accordion >}}
 
 {{< accordion "Conferences and Publications" >}}
+
+#### Presenter | [Data Fair 2025](https://datafair.si)
+
 #### Attendee | [International Conference on Machine Learning (ICML) 2024](https://icml.cc/Conferences/2024)
 
 #### Presenter | [Data Science Conference 2023](https://datasciconference.com)
@@ -257,7 +260,7 @@ Key Skills: 3D Modeling, Game Development, Educational Technology, Research
 
 {{< accordion "Professional Certifications" >}}
 
-{{< notice "info" >}}
+{{< notice "note" >}}
 These certifications demonstrate my commitment to continuous learning and expertise in key areas of data science and machine learning.{{< /notice >}}
 
 1. [Natural Language Processing Specialization](https://coursera.org/share/582fdda3347a5ad9f5e0ef199901dc4a) | Coursera, January 2023
@@ -276,8 +279,11 @@ These certifications demonstrate my commitment to continuous learning and expert
 
 ---
 
-{{< notice "note" >}}
-For more information and to see my latest projects, please visit my [GitHub profile](https://github.com/lidija-jovanovska).
+{{< notice "tip" >}}
+For more information and to see my latest projects, please visit my [GitHub profile](https://github.com/lidija-jovanovska)
+
+
+Want to get in touch? [Contact me](/contact)
 {{< /notice >}}
 
 </div>

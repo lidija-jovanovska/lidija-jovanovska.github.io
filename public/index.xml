@@ -9,11 +9,11 @@
     <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mastering Value Investing with Python: Implementing Benjamin Graham&#39;s Strategy</title>
+      <title>Value Investing with Python: Benjamin Graham’s Strategy in Action</title>
       <link>http://localhost:1313/blog/post-1/</link>
       <pubDate>Thu, 27 Feb 2025 00:00:00 +0100</pubDate>
       <guid>http://localhost:1313/blog/post-1/</guid>
-      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;Have you ever wondered why some investors consistently outperform the market while others struggle? The answer might lie in following time-tested principles rather than chasing the latest investment trends. What if you could use the same investment strategy that influenced Warren Buffett and countless other successful investors? In this post, I&amp;rsquo;ll show you exactly how to implement Benjamin Graham&amp;rsquo;s defensive investment approach using Python and financial data.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Have you ever wondered why some investors consistently outperform the market while others struggle? The answer might lie in following time-tested principles rather than chasing the latest investment trends. What if you could use the same investment strategy that influenced Warren Buffett and countless other successful investors? In this post, I&amp;rsquo;ll show you exactly how to implement Benjamin Graham&amp;rsquo;s defensive investment approach using Python and financial data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elements</title>
