@@ -171,6 +171,22 @@
 
 
 
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TLKWY20JT"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0TLKWY20JT');
+        }
+      </script>
+
 
 
 
@@ -925,6 +941,57 @@
 
 
 
+  
+    <div id="cookie-box" class="cookie-box cookie-box-hide">
+      This site uses cookies. By continuing to use this website, you agree to their use.
+      <button
+        id="cookie-button"
+        class="cookie-box-button btn btn-sm btn-outline-primary">
+        I Accept
+      </button>
+    </div>
+
+    
+    <script type="application/javascript">
+      const cookieBox = document.getElementById('cookie-box');
+      const cookieButton = document.getElementById('cookie-button');
+      if (!Cookies.get('cookie-consent')) {
+        cookieBox.classList.remove('cookie-box-hide');
+        cookieButton.onclick = function () {
+          Cookies.set('cookie-consent', true, {
+            expires:  60 
+          });
+          cookieBox.classList.add('cookie-box-hide');
+        };
+      }
+    </script>
+
+    
+    <style>
+      .cookie-box {
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        z-index: 9999;
+        padding: 1.5rem;
+        background-color: #fff;
+        max-width: calc(100% - 4rem);
+        width: 25rem;
+        box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
+        border-radius: inherit;
+      }
+      .cookie-box-hide {
+        display: none;
+      }
+      .cookie-box-button {
+        display: block;
+        margin-top: 1rem;
+      }
+
+      .dark .cookie-box {
+        background-color: #222;
+      }
+    </style>
   
 
 

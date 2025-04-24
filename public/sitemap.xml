@@ -5,9 +5,6 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-27T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/benjamin-graham/</loc>
-    <lastmod>2025-02-27T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-02-27T00:00:00+01:00</lastmod>
   </url><url>
@@ -15,9 +12,6 @@
     <lastmod>2025-02-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/financial-analysis/</loc>
-    <lastmod>2025-02-27T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/financial-modeling-prep/</loc>
     <lastmod>2025-02-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/investing/</loc>
@@ -29,13 +23,7 @@
     <loc>http://localhost:1313/categories/python/</loc>
     <lastmod>2025-02-27T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/stock-screening/</loc>
-    <lastmod>2025-02-27T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-02-27T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/value-investing/</loc>
     <lastmod>2025-02-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/post-1/</loc>
