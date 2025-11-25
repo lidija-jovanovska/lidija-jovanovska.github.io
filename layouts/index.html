@@ -3,13 +3,13 @@
   {{ with .Params.banner }}
     <section class="relative min-h-screen flex items-center justify-center">
       <!-- Background image -->
-      <div class="absolute inset-0"
-      style="background-image: url('/images/banner-girl-x4.jpg');
+      <div
+        class="absolute inset-0"
+        style="background-image: url('/images/banner-girl-x4.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      filter: brightness(50%)">
-      </div>
+      filter: brightness(50%)"></div>
 
       <!-- Content -->
       <div class="container relative z-10">
@@ -21,18 +21,18 @@
             {{ .content | markdownify }}
           </p>
           {{ with .button }}
-          {{ if .enable }}
-            <a
-              class="btn btn-primary"
-              href="{{ .link | absURL }}"
-              {{ if strings.HasPrefix .link `http` }}
-                target="_blank" rel="noopener"
-              {{ end }}>
-              {{ .label }}
-              <i class="fa fa-arrow-right pl-2"></i>
-            </a>
+            {{ if .enable }}
+              <a
+                class="btn btn-primary"
+                href="{{ .link | absURL }}"
+                {{ if strings.HasPrefix .link `http` }}
+                  target="_blank" rel="noopener"
+                {{ end }}>
+                {{ .label }}
+                <i class="fa fa-arrow-right pl-2"></i>
+              </a>
+            {{ end }}
           {{ end }}
-        {{ end }}
         </div>
       </div>
     </section>

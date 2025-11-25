@@ -1,18 +1,70 @@
+# OS files
 Thumbs.db
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Editor directories
 .idea
+.vscode
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Hugo
+public
+resources
+.hugo_build.lock
+hugo_stats.json
+
+# Node.js
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+yarn.lock
+.npm
+.eslintcache
+
+# Build outputs
+builds
 .dist
 .tmp
 .lock
 .sass-cache
-npm-debug.log
-node_modules
-builds
-package-lock.json
-public
-resources
-.hugo_build.lock
-jsconfig.json
-hugo_stats.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Go
 go.sum
-yarn.lock
+
+# Husky (keep .husky/ but ignore internal files)
+.husky/_
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Hugo modules cache (if using modules)
+.hugo_modules/
+
+# Optional: Uncomment if you don't want to track these
+# jsconfig.json
+# theme.toml
